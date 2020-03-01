@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tasty-recipes-app';
+
+  loadedNavbarItem = 'recipes';
+
+  onNavigate(navItem: string) {
+    this.loadedNavbarItem = navItem;
+  }
 }
